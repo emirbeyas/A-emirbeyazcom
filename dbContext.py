@@ -11,6 +11,7 @@ class webContent:
     qualificationEducation = []
     qualificationWork = []
     skills = []
+    skillsIcons = []
     skillsLength = 0
     portfolioList = []
     portfolioLength = 0
@@ -40,6 +41,7 @@ class webContent:
             lst.append(i.id)
             for j in i.to_dict().get('SKILL'):
                 lst.append(j)
+            self.skillsIcons.append(i.to_dict().get('icon'))
             self.skills.append(lst)
         self.skillsLength = len(col)
 

@@ -434,7 +434,7 @@ img {
   display: flex;
   align-items: center;
   margin-bottom: var(--mb-2-5);
-  cursor: pointer;
+  cursor: default;
 }
 
 .skills__icon,
@@ -457,8 +457,9 @@ img {
 }
 
 .skills__arrow{
-  margin-left: auto;
-  transition: .4s;
+display: none;
+  /* margin-left: auto;
+  transition: .4s; */
 }
 
 .skills__list{
